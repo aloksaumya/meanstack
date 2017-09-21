@@ -1,0 +1,24 @@
+{
+  "name": "meanstack",
+  "version": "1.0.0",
+  "description": "mean stack application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MEAN",
+    "stack"
+  ],
+  "author": "alok",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "express-sessions": "^1.0.6",
+    "jsonwebtoken": "^8.0.1",
+    "mongoose": "^4.11.11",
+    "morgan": "^1.8.2"
+  }
+}
