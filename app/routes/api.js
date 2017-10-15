@@ -13,13 +13,13 @@ module.exports = function(router){
 		//console.log(typeof req.body.username);
 
 			if (req.body.username == null || req.body.username == '' || req.body.password == null || req.body.password == ''){
-				res.send('some data went missing!!!')
+				res.json({ success: false , message: 'some data went missing!!!'});
 			} else{
 				user.save(function(err){
 					if (err){
-						res.send(err);
-					}else{
-						res.json(user)
+						res.json({ success: false , message: 'user already exist!!!'});
+					}else{ 
+						res.json({ success: true , message: 'user created'});
 					}
 				});
 			}  
